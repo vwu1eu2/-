@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>غسالة الهواء المضغوط</title>
+  <title>تطوير غسالات الهواء المضغوط</title>
   <link rel="stylesheet" href="style.css">
+  <!-- تضمين مكتبة Three.js ومكتبة GLTFLoader من CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/loaders/GLTFLoader.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>غسالة الهواء المضغوط</h1>
+    <div class="logo">
+      <h1>تطوير غسالات الهواء المضغوط</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="#home">الرئيسية</a></li>
@@ -19,30 +25,47 @@
     </nav>
   </header>
 
-  <section id="home">
-    <h2>الفكرة وفوائدها</h2>
-    <p>الغسالة التي تعمل باستخدام الهواء المضغوط توفر حلاً مبتكرًا وموفرًا للطاقة. تعرف على فوائد هذه التقنية.</p>
-  </section>
+  <main>
+    <!-- قسم الفكرة والفوائد مع صورة توضيحية -->
+    <section id="home" class="section">
+      <h2>الفكرة وفوائدها</h2>
+      <p>
+        تعتمد هذه التقنية على استخدام الهواء المضغوط لتشغيل الغسالة بكفاءة عالية مع تقليل استهلاك الطاقة والحفاظ على البيئة.
+      </p>
+      <!-- صورة توضيحية للغسالة (يُفترض رفع ملف washer.jpg) -->
+      <img src="washer.jpg" alt="صورة توضيحية للغسالة" class="section-image">
+    </section>
 
-  <section id="mechanism">
-    <h2>آلية التشغيل</h2>
-    <p>الغسالة تعمل على تحويل الطاقة من الهواء المضغوط إلى حركة ميكانيكية. تعلم كيف تعمل.</p>
-  </section>
+    <!-- قسم آلية التشغيل -->
+    <section id="mechanism" class="section">
+      <h2>آلية التشغيل</h2>
+      <p>
+        يتم تحويل الطاقة الناتجة عن ضغط الهواء إلى حركة ميكانيكية تحرك الأجزاء الداخلية للغسالة. يتم التحكم بدقة في مستويات الضغط من خلال لوحة ذكية لضمان أفضل أداء.
+      </p>
+    </section>
 
-  <section id="virtual-washer">
-    <h2>الغسالة الافتراضية</h2>
-    <p>هنا يمكنك مشاهدة نموذج الغسالة الافتراضية.</p>
-  </section>
+    <!-- قسم النموذج الثلاثي الأبعاد للغسالة -->
+    <section id="virtual-washer" class="section">
+      <h2>الغسالة الافتراضية</h2>
+      <p>
+        اكتشف نموذج الغسالة التفاعلي ثلاثي الأبعاد. يمكنك تدوير النموذج والنقر على عناصره لاستعراض التفاصيل.
+      </p>
+      <div id="3d-model-container">
+        <canvas id="3d-canvas"></canvas>
+      </div>
+    </section>
 
-  <section id="development">
-    <h2>التطوير والمقترحات</h2>
-    <p>اقترح طرقًا لتحسين الغسالة باستخدام تقنيات جديدة.</p>
-  </section>
+    <!-- قسم التطوير والمقترحات -->
+    <section id="development" class="section">
+      <h2>التطوير والمقترحات</h2>
+      <p>
+        من خلال دمج تقنيات الذكاء الاصطناعي وأنظمة التحكم عن بُعد، يمكن تحسين أداء الغسالة وزيادة كفاءتها. نقترح أيضاً إجراء أبحاث مستمرة لتطوير تصميمات جديدة باستخدام تقنيات الطباعة ثلاثية الأبعاد.
+      </p>
+    </section>
+  </main>
 
   <footer>
-    <p>جميع الحقوق محفوظة &copy; 2025</p>
+    <p>جميع الحقوق محفوظة &copy; 2025 - تطوير غسالات الهواء المضغوط</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
-</html>
+  </html>
